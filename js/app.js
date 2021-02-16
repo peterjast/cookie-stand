@@ -115,6 +115,7 @@ function displayLocation(location){
   articleElem.appendChild(nameHeaderElem);
 
   let cookiesElem = document.createElement('ul');
+
   articleElem.appendChild(cookiesElem);
 
   for(let i = 0; i < timeSlots.length; i++) {
