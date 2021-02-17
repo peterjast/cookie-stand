@@ -1,17 +1,22 @@
-#locationData {
-    display: flex;
-  }
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-#locationData table {
-    flex: 1;
-    border: 2px solid;
-    border-radius: 10px;
-    text-align: center;
-  
-    margin: 10px;
-    padding: 20px;
-}  
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
 
-th, td {
-  border: 1px solid black;
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: salmon;
+  color: white;
 }

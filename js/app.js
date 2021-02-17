@@ -98,7 +98,7 @@ let locations = [
   lima
 ];
 
-let salesContainerElem = document.getElementById('locationData');
+const salesContainerElem = document.getElementById('locationData');
 
 function displayTable(){
   const tableElem = document.createElement('table');
