@@ -139,11 +139,16 @@ function displayFooter(){
   }
 
   let dailyCookieTotal = 0;
+
   for(let i = 0; i < locations.length; i++){
-    dailyCookieTotal += locations[i].totalCookieSales;
+    const currentStand = locations[i];
+    dailyCookieTotal += currentStand.totalCookieSales;
   }
+
   const dailyCookieTotalElem = document.createElement('td');
+
   dailyCookieTotalElem.textContent = dailyCookieTotal;
+
   tableRowElem.appendChild(dailyCookieTotalElem);
 
 }

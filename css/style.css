@@ -1,3 +1,158 @@
+body {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(87,123,166,1) 100%);
+  display:flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width:960px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+header {
+  width: 100%;
+  background-color: #222;
+  align-content: center;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.navbar {
+  width: 960px;
+  margin: auto;
+}
+
+.logo-container,header nav {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.logo-container {
+  width: 200px;
+  height: 70px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+li{
+   text-align: center;
+   color:#ddd;
+   width: 200px;
+   display: inline;
+   margin: 70px;
+}
+
+header{
+   align-content: center;
+}
+
+.left, .right, .middle{
+width: 300px;
+float: left;
+margin: 15px;
+}
+
+.left {
+  margin-left: 0px;
+}
+
+.right {
+  margin-right: 0px;
+}
+
+.sub-banners:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1, .column2 {
+  width: 480px;
+  float: left;
+  margin: 15px;
+}
+
+.column1 {
+  margin-left: 0;
+}
+
+.column2 {
+  margin-right: 0;
+  height: 400px;
+  width: 450px;
+}
+
+article {
+  height: 140px;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+button {
+  color:#ddd;
+  background-color: #000;
+  margin-top: 15px;
+  transition: 350ms;
+}
+
+a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: salmon;
+}
+
+/* mouse over link */
+a:hover {
+  color:salmon;
+}
+
+/* selected link */
+a:active {
+  color: salmon;
+}
+
+
+button:active {
+  color: salmon;
+}
+button:hover {
+  color: #000;
+  background-color: #ddd;
+}
+
+.hero {
+  margin: 15px;
+  margin-left: 0px;
+}
+
+
+footer {
+  background-color: #222;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+  color: salmon;
+  vertical-align:center;
+  margin-top: 15px;
+}
+
 table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
