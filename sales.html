@@ -25,10 +25,37 @@
         </div>
     </header>
     <main>
-        <div id = "locationData">
+        <div class="salmonHeader">
+            <h1>Salmon Cookies</h1>
+        </div>
+        <div id="locationData">
+            <h2 class="salesHeader">Estimated Cookie Sales</h2>
+        </div>
+        <div class="locationForm">
+            <form id="new-location-form">
+                <fieldset>
+                    <legend>Add New Cookie Stand Location</legend>
 
+                    <label for="name-input">Store Name:</label>
+                    <input type="text" id="name-input" name="storeName" required/>
+
+                    <label for="min-input">Minimum Customers Per Hour:</label>
+                    <input type="number" id="min-input" name="minCustomers" required min="0"/>
+
+                    <label for="min-input">Maximum Customers Per Hour:</label>
+                    <input type="number" id="max-input" name="maxCustomers" required min="1"/>
+
+                    <label for="min-input">Average Cookies Per Sale:</label>
+                    <input type="number" step="0.01" id="avg-input" name="avgCookies" required min=".01"/>
+
+                    <button type="submit">SUBMIT</button>   
+                </fieldset>             
+            </form>
         </div>
     </main>
+    <footer>
+        &copy; Salmon Cookies
+    </footer>
     <script src = "js/app.js"></script>
 </body>
 </html>
