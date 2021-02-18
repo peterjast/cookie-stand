@@ -118,6 +118,8 @@ function displayFooter(){
 
   const tableRowElem = document.createElement('tr');
 
+  tableRowElem.setAttribute('id', 'totalRow');
+
   tableElem.appendChild(tableRowElem);
 
   const totalsHeaderElem = document.createElement('th');
@@ -161,4 +163,19 @@ for(let i = 0; i < locations.length; i++) {
 }
 
 displayFooter();
+
+const form = document.getElementById('new-location-form');
+
+form.addEventListener('submit', submitHandler);
+
+function submitHandler(event) {
+  event.preventDefault();
+  let newLocation = new CookieStand(event.target.storeName.value, parseInt(event.target.maxCustomers.value), parseInt(event.target.maxCustomers.value), parseFloat(event.target.avgCookies.value));
+  locations.push(newLocation);
+  let totalRow = document.getElementById('totalRow');
+  totalRow.remove();
+  newLocation.render();
+  displayFooter();
+}
+
 

@@ -162,9 +162,12 @@ table {
 table td, table th {
   border: 1px solid #ddd;
   padding: 8px;
+  text-align: center;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
 
 table tr:hover {background-color: #ddd;}
 
@@ -174,4 +177,75 @@ table th {
   text-align: left;
   background-color: salmon;
   color: white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+fieldset button {
+  width: 100%;
+  background-color: salmon;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:salmon;
+  cursor: pointer;
+}
+
+.locationForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.locationForm {
+  margin: 15px;
+}
+
+legend {
+  color:salmon;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.salesHeader {
+  /* text-align:center; */
+  color:whitesmoke;
+  font-size: 24px;
+}
+
+.salmonHeader {
+  text-align:center;
+  color:whitesmoke;
+  font-size: 32px;
+  margin: 30px;
+}
+
+#locationData {
+  margin: 15px;
+  margin-bottom: 30px;
 }
