@@ -170,9 +170,9 @@ form.addEventListener('submit', submitHandler);
 
 function submitHandler(event) {
   event.preventDefault();
-  let newLocation = new CookieStand(event.target.storeName.value, parseInt(event.target.maxCustomers.value), parseInt(event.target.maxCustomers.value), parseFloat(event.target.avgCookies.value));
+  const newLocation = new CookieStand(event.target.storeName.value, parseInt(event.target.maxCustomers.value), parseInt(event.target.maxCustomers.value), parseFloat(event.target.avgCookies.value));
   locations.push(newLocation);
-  let totalRow = document.getElementById('totalRow');
+  const totalRow = document.getElementById('totalRow');
   totalRow.remove();
   newLocation.render();
   displayFooter();
