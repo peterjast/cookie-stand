@@ -14,10 +14,15 @@ main {
 
 header {
   width: 100%;
-  background-color: #222;
+  background-color:whitesmoke;
   align-content: center;
   padding: 10px;
   margin-bottom: 15px;
+}
+
+section {
+  margin-top: 48px;
+  margin-bottom: 12px;
 }
 
 .navbar {
@@ -43,15 +48,13 @@ img {
 
 
 li{
+   font-family: "Sofia", sans-serif;
+   font-size: 24px;
    text-align: center;
-   color:#ddd;
+   color:whitesmoke;
    width: 200px;
    display: inline;
-   margin: 70px;
-}
-
-header{
-   align-content: center;
+   margin: 60px;
 }
 
 .left, .right, .middle{
@@ -101,49 +104,51 @@ h1 {
 }
 
 button {
-  color:#ddd;
-  background-color: #000;
-  margin-top: 15px;
+  font-family: "Sofia", sans-serif;
+  font-size: 18px;
+  color: salmon;
+  background-color: whitesmoke;
+  margin-top: 10px;
   transition: 350ms;
 }
 
 a:link {
-  color: whitesmoke;
+  color: salmon;
   text-decoration: none;
 }
 
-/* visited link */
 a:visited {
   color: salmon;
 }
 
-/* mouse over link */
 a:hover {
-  color:salmon;
+  color:whitesmoke;
+  background-color:salmon;
 }
 
-/* selected link */
 a:active {
   color: salmon;
 }
 
-
-button:active {
-  color: salmon;
+button a:hover {
+  color: whitesmoke;
+  background-color: salmon;
 }
+
 button:hover {
-  color: #000;
-  background-color: #ddd;
+  color: whitesmoke;
+  background-color: salmon;
 }
 
 .hero {
-  margin: 15px;
+  width: 100%;
   margin-left: 0px;
+  margin-bottom: 15px;
 }
 
-
 footer {
-  background-color: #222;
+  background-color: whitesmoke;
+  font-family: "Sofia", sans-serif;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -161,8 +166,8 @@ table {
 
 table td, table th {
   border: 1px solid #ddd;
+  color: #222;
   padding: 8px;
-  text-align: center;
 }
 
 table tr:nth-child(even){
@@ -210,6 +215,13 @@ fieldset button {
   cursor: pointer;
 }
 
+fieldset button:hover{ 
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(87,123,166,1) 0%, rgba(238,174,202,1) 100%);
+
+  cursor: pointer;
+}
+
 input[type=submit]:hover {
   background-color:salmon;
   cursor: pointer;
@@ -226,6 +238,7 @@ input[type=submit]:hover {
 }
 
 legend {
+  font-family: "Sofia", sans-serif;
   color:salmon;
   font-size: 22px;
   margin-bottom: 15px;
@@ -238,7 +251,25 @@ legend {
   font-size: 24px;
 }
 
+h1, h2, h3 {
+  font-family: "Sofia", sans-serif;
+  color:whitesmoke;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
 .salmonHeader {
+  font-family: "Sofia", sans-serif;
   text-align:center;
   color:whitesmoke;
   font-size: 32px;
@@ -249,3 +280,13 @@ legend {
   margin: 15px;
   margin-bottom: 30px;
 }
+
+p {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  color:aliceblue;
+}
+
+
