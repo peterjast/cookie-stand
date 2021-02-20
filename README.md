@@ -24,7 +24,7 @@
 
 ### Home
 
-![Home Page](img/homeage.png)
+![Home Page](img/homepage.png)
 
 ### Sales
 
